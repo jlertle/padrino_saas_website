@@ -5,4 +5,12 @@
     = stylesheet_link_tag 'bootstrap', 'website'
 
   %body
+    .navbar.navbar-fixed-top
+      .navbar-inner
+        .container
+          %a.brand{:href => '/'} Padrino SaaS
+          %ul.nav
+            %li
+              %a(href='/') Website
+
     = yield
