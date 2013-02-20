@@ -32,3 +32,4 @@ end
 
 # Mounts the core application for this project
 Padrino.mount("PadrinoSaasWebsite").to('/')
+Padrino.mount("PadrinoSaasApplication", app_file: Padrino.root("padrino_saas_application/app/app.rb")).to('/app')
