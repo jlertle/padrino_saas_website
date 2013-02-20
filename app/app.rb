@@ -58,4 +58,10 @@ class PadrinoSaasWebsite < Padrino::Application
   #     render 'errors/505'
   #   end
   #
+
+  layout :website
+
+  get '/' do
+    render :index
+  end
 end
