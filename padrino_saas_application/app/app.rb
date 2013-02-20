@@ -59,9 +59,6 @@ class PadrinoSaasApplication < Padrino::Application
   #   end
   #
 
-  #layout Padrino.root("app/views/layouts/website").to_sym
-  #layout :website
-
   get '/' do
     render :index, layout: :"../../../../app/views/layouts/website"
   end
