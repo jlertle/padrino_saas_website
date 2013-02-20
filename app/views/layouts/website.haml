@@ -14,5 +14,11 @@
               %a(href='/') Website
             %li
               %a(href='/app') Application
+            - if session[:logged_in]
+              %li
+                %a(href='/users/logout') Logout
+            - else
+              %li
+                %a(href='/users/login') Login
 
     = yield

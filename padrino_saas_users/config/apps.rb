@@ -27,10 +27,8 @@
 #
 Padrino.configure_apps do
   # enable :sessions
-  set :session_secret, 'a6b3d5bbcba7f5e399f2c0aeb78b6ae3426f01d88f1ce0a75ee26ff5f27c3b71'
+  set :session_secret, '73caee9850c6da3a3e074ae16ae4f411258b39b7c897997806f050bf74eed088'
 end
 
 # Mounts the core application for this project
-Padrino.mount("PadrinoSaasWebsite").to('/')
-Padrino.mount("PadrinoSaasApplication", app_file: Padrino.root("padrino_saas_application/app/app.rb")).to('/app')
-Padrino.mount("PadrinoSaasUsers", app_file: Padrino.root("padrino_saas_users/app/app.rb")).to('/users')
+Padrino.mount("PadrinoSaasUsers").to('/')
