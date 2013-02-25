@@ -59,7 +59,10 @@ class PadrinoSaasApplication < Padrino::Application
   #   end
   #
 
+  layout :application
+
   get '/' do
-    render :index, layout: :"../../../../app/views/layouts/website"
+    #render :index, layout: :"../../../../app/views/layouts/website"
+    render :index, layout: :website
   end
 end
